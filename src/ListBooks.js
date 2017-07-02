@@ -13,7 +13,7 @@ class ListBooks extends Component {
         <div className="list-books-content">
           { bookshelfCategories.map((category) => {
             let categorizedBooks = this.props.books.filter((book) => (book.shelf === category))
-            return <Bookshelf key={category} books={categorizedBooks} category={category}/>
+            return <Bookshelf key={category} books={categorizedBooks} onBookUpdate={this.props.onBookUpdate} category={category}/>
           })}
         </div>
         <div className="open-search">
