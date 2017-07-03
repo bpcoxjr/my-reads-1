@@ -75,15 +75,15 @@ class Book extends Component {
             <div className="book-cover" onClick={this.showModal} style={{ width: 128, height: 188, backgroundImage: `url('${thumbnail}')` }}></div>
             <div className="details">
               <h4>Release Date</h4>
-              <p>{metadata.publishedDate}</p>
+              <p>{publishedDate}</p>
               <h4>Author(s)</h4>
               { authors.map((author) => (
                 <p key={author}>{author}</p>
               ))}
               <h4>Publisher</h4>
-              <p>{metadata.publisher}</p>
+              <p>{publisher}</p>
               <h4>Description</h4>
-              <p>{metadata.description}</p>
+              <p>{description}</p>
             </div>
           </Modal.Body>
           <Modal.Footer>
