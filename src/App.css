@@ -172,3 +172,35 @@ body, .app {
   text-align: center;
   font-size: 0.8em;
 }
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+.book-cover:hover .overlay {
+  opacity: 1;
+}
+.info {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65px;
+  background-image: url('./icons/info.svg');
+}
+.modal-body {
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.modal-body .book-cover{
+
+}
+.details {
+  margin-left: 30px;
+  flex: 1;
+}

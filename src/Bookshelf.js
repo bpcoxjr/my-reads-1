@@ -8,7 +8,7 @@ class Bookshelf extends Component {
     return (
       <div>
         <div className="bookshelf">
-          <h2 className="bookshelf-title">{Util.camelCaseToTitleCase(category)}</h2>
+          <h3 className="bookshelf-title">{Util.camelCaseToTitleCase(category)}</h3>
           <div className="bookshelf-books">
             <ol className="books-grid">
               { books.map((book) => (
